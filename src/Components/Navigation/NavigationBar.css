@@ -1,0 +1,36 @@
+.header {
+  height: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.home-text {
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul :hover {
+  cursor: pointer;
+}
+
+.nav-list li:nth-child(1) {
+  margin-left: auto;
+}
