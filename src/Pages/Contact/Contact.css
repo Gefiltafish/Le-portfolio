@@ -1,0 +1,73 @@
+/* .contact-container {
+  display: grid;
+  justify-items: auto;
+} */
+
+.contact-header {
+  color: blue;
+  font-size: 14em;
+  text-transform: uppercase;
+}
+
+.contact-text-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2em 2em;
+  justify-items: center;
+}
+
+.contact-text {
+  color: #8d8d8d;
+  font-size: 3rem;
+}
+
+.contact-text :hover {
+  color: #fff;
+}
+
+#map,
+#mail {
+  fill: none;
+  stroke: #8d8d8d;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
+  width: 10rem;
+  height: 10rem;
+}
+
+#map {
+  fill: none;
+  stroke: #8d8d8d;
+  stroke-width: 28;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  width: 10rem;
+  height: 10rem;
+}
+
+#map-base {
+  stroke-dasharray: 1512, 1514;
+  stroke-dashoffset: 1513;
+  animation: map 1s ease-in forwards;
+}
+
+#marker {
+  stroke-dasharray: 1220, 1222;
+  stroke-dashoffset: 1221;
+  animation: map 1s ease-in 1s forwards;
+}
+
+#circle {
+  stroke-dasharray: 303, 305;
+  stroke-dashoffset: 304;
+  animation: map 1s ease-in 2s forwards;
+}
+
+@keyframes map {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
